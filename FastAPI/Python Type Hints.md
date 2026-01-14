@@ -1,7 +1,10 @@
 ## Python Type Hints
 이 변수가 어떤 종류인지 단서를 남기는 것
-타입 힌트는 강제하지 않는 메모임 하지만 fast api 하는게 좋음
 
+타입 힌트는 강제하지 않는 메모임 하지만 fast api에서는 하는게 좋음
+
+### fast API에서 쓰는 이유
+검증, 변환, 문서화)을 수행하는 도구
 
 ```
 # 타입 힌트 없음
@@ -23,6 +26,8 @@ def greet(name: str):
 #리턴값도 힌트를 붙일 수 있음
 def greet(name: str) ->str :
   return name
+
+#
 ```
 
 ## 리스트
@@ -58,3 +63,6 @@ name: str
 # 선택 값 - 문자열이거나 없을 수 있음
 nickname: str | None = None
 ```
+
+
+
